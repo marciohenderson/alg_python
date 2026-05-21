@@ -13,14 +13,14 @@ while True:
         break
     soma = soma + num
     quantidade = quantidade + 1
+    media = soma / quantidade
     if num > maior:
         maior = num
-        if quantidade > 0:
-            media = soma / quantidade
-    print("-"*30)
+    print("-"*40)
     print(f"""RESULTADOS
+    a quantidade de números digitados é {quantidade}
     a soma dos números é igual à: {soma}
     o maior número é: {maior}
-    a média dos números digitados é: {media}
+    a média dos números digitados é: {media:.2f}
     """)
-    print("-"*30)
+    print("-"*40)
