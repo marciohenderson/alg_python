@@ -3,14 +3,8 @@
 primeiro_termo = int(input("Digite o primeiro termo: "))
 quantidade = int(input("Digite a quantidade de termos: "))
 razao = int(input("Digite a razão: "))
-
-
-for i in range(quantidade):
-    primeiro_termo += razao
-    print(f"Os termos num intervalo de {razao} números são: {primeiro_termo}")
-
-print("OU")
+termo = primeiro_termo
 
 for i in range(quantidade):
-    primeiro_termo += razao
-print(f"Os termos num intervalo de {razao} números são: {primeiro_termo}")
+    print(f'Os termos da P.A são: {termo}')
+    termo += razao
